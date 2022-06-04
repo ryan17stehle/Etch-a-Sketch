@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ededed;
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px dashed black;
+    cursor: pointer;
+    transition: transform .1s linear 0s;
+}
+
+button:hover, input[type='color']:hover {
+    transform: scale(1.15);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.button-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    width: 10vh;
+    height: 10vh;
+    border: none;
+    align-self: center;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+    
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* math function for row height */
+.grid-container {
+    width: 50vh;
+    display: grid;
+    background-color: white;
+    box-shadow: 0 0 10px 1px black;
+}
+
+.grid-item {
+    
+}
+
+.slider-label {
+    text-align: center;
+}
